@@ -1,24 +1,44 @@
-# Logs
-logs
+# ---- JS / Vite ----
+node_modules/
+dist/
+build/
+.vite/
+.parcel-cache/
+.next/
+coverage/
 *.log
 npm-debug.log*
-yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
-lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
+# ---- Env / config ----
+.env
+.env.*
+!.env.example
 
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
+# ---- Editor junk ----
 .DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+.idea/
+.vscode/
+.history/
+
+# ---- Python (FastAPI backend) ----
+.venv/
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints
+.python-version
+
+# ---- Model / data blobs ----
+models/
+data/
+*.safetensors
+*.pt
+*.bin
+
+# ---- Caches (general) ----
+.cache/
